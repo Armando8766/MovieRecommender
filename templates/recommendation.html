@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+    <head>
+        <html lang="en" dir="ltr">
+        <meta charset="utf-8">
+        <title>Recommendations</title>
+        <style type="text/css">    
+          body
+          {
+            border: 2px solid black;
+            padding: 0px;
+            background: url("https://toscon14.files.wordpress.com/2014/05/seminar-presenter-pic.jpg");
+            background-repeat: no-repeat;
+            background-size: 450px 450px; 
+            background-position: center center;
+            } 
+        </style>  
+    </head>
+
+    <body bgcolor="Lavender">
+        {% extends "template.html" %}
+        {% block content %}
+            <h1><font color="midnightblue"><strong>Here are the top-20 movies that you'll most probably like:</strong></font></h1>
+            <p>{{ table }}</p>
+        {% endblock %}
+    </body>
+</html>
